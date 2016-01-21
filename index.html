@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+
+<head>
+    <meta charset="utf-8">
+    <title>Backbone.js + RequireJS • TodoMVC</title>
+    <link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+    <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+    <link rel="stylesheet" href="node_modules/todomvc-app-css/todo.custom.css">
+</head>
+
+<body>
+    <div id="todoApp">
+        <header>
+            <h1>Todos</h1>
+            <input id="newTodo" type="text" placeholder="What needs to be done?" autofocus>
+        </header>
+        <section id="main">
+            <input id="toggleAll" type="checkbox">
+            <label for="toggleAll">Mark all as complete</label>
+            <ul id="todoList"></ul>
+        </section>
+        <footer id="footer">
+            <a id="clearCompleted">Clear completed</a>
+            <div id="todoCount"></div>
+        </footer>
+    </div>
+    <section id="todoapp" style="display: none;">
+        <header id="header">
+            <h1>todos</h1>
+            <input id="new-todo" placeholder="What needs to be done?" autofocus>
+        </header>
+        <section id="main">
+            <input id="toggle-all" type="checkbox">
+            <label for="toggle-all">Mark all as complete</label>
+            <ul id="todo-list"></ul>
+        </section>
+        <footer id="footer"></footer>
+    </section>
+    <footer id="info">
+        <p>Double-click to edit a todo</p>
+        <p>Written by <a href="https://github.com/tastejs/todomvc">TasteJS</a> jcplus </p>
+        <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+    <!-- <script src="node_modules/todomvc-common/base.js"></script> -->
+    <script data-main="js/main" src="node_modules/requirejs/require.js"></script>
+</body>
+
+</html>
